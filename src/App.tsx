@@ -50,6 +50,7 @@ import AdaptiveBackgroundIntelligenceDemo from './components/AdaptiveBackgroundI
 import { TermsOfUse } from './components/TermsOfUse';
 import AnimatedCursorPage from './components/AnimatedCursorPage';
 import AnimatedCursor from './components/AnimatedCursor';
+import FileUploadDetailsPage from './components/GlassyFileUpload';
 
 import Stories from './components/Stories';
 // import Register from './login/SignUp';
@@ -219,6 +220,10 @@ const App: React.FC = () => {
               />
               <Route path='/termsOfUse' element={<TermsOfUse />} />
 
+              <Route
+                path='/file-upload-details'
+                element={<FileUploadDetailsPage />}
+              />
               <Route path='/stories' element={<Stories />} />
 
               {/* <Route path='/signup' element={<Register />} /> */}

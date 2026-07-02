@@ -23,6 +23,7 @@ import {
   GalleryThumbnails,
   Sparkles,
   MousePointer,
+  Upload,
 } from 'lucide-react';
 import { HiOutlineWrenchScrewdriver } from 'react-icons/hi2';
 
@@ -96,6 +97,14 @@ const GlassyUIComponentsPage: React.FC = () => {
       icon: <Type size={22} />,
       onClick: () =>
         navigate('/input-details', { state: { fromPage: currentPage } }),
+    },
+    {
+      title: 'File Upload',
+      description:
+        'Elegant drag-and-drop file upload with a frosted glass aesthetic.',
+      icon: <Upload size={22} />,
+      onClick: () =>
+        navigate('/file-upload-details', { state: { fromPage: currentPage } }),
     },
     {
       title: 'Modals',
