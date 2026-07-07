@@ -52,6 +52,7 @@ import AnimatedCursorPage from './components/AnimatedCursorPage';
 import AnimatedCursor from './components/AnimatedCursor';
 import FileUploadDetailsPage from './components/GlassyFileUpload';
 import DividerDetailsPage from './components/DividerDetailsPage';
+import SkeletonDetailsPage from './components/SkeletonDetailsPage';
 
 import Stories from './components/Stories';
 // import Register from './login/SignUp';
@@ -151,6 +152,10 @@ const App: React.FC = () => {
               <Route path='/' element={<GlassyUILandingPage />} />
               <Route path='/components' element={<GlassyUIComponentsPage />} />
               <Route path='/divider-details' element={<DividerDetailsPage />} />
+              <Route
+                path='/skeleton-details'
+                element={<SkeletonDetailsPage />}
+              />
               <Route path='/toast-page' element={<ToastPage />} />
               <Route path='/button-details' element={<ButtonDetailsPage />} />
               <Route path='/card-details' element={<CardDetailsPage />} />

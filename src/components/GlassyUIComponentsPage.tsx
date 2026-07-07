@@ -115,6 +115,14 @@ const GlassyUIComponentsPage: React.FC = () => {
         navigate('/divider-details', { state: { fromPage: currentPage } }),
     },
     {
+      title: 'Skeleton Loaders',
+      description:
+        'Customizable skeleton placeholder loaders with a shimmering glass effect.',
+      icon: <Sparkles size={22} />,
+      onClick: () =>
+        navigate('/skeleton-details', { state: { fromPage: currentPage } }),
+    },
+    {
       title: 'Modals',
       description: 'Eye-catching dialog boxes with glassmorphism effects.',
       icon: <MessageSquare size={22} />,
