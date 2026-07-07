@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 interface GeneratorProps {
   toaster: React.Dispatch<
@@ -74,15 +74,15 @@ const ToastGenerator: React.FC<GeneratorProps> = ({ toaster }) => {
 
     // Example of using this data when generating toasts dynamically:
     const randomIndex = Math.floor(Math.random() * toastData.length);
-    const newToast = toastData[randomIndex];
+    const template = toastData[randomIndex];
+    const newToast = {
+      id: Date.now() + Math.random(),
+      title: template.title,
+      message: template.message,
+    };
 
     // Add new item to the array
     toaster(prevItems => [...prevItems, newToast]);
-
-    // Remove the item after 3 seconds
-    setTimeout(() => {
-      toaster(prevItems => prevItems.filter(item => item !== newToast));
-    }, 10000); // 3000ms = 3 seconds
   };
 
   const getGlassyClasses = () => {

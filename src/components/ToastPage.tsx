@@ -195,7 +195,7 @@ const Toast: React.FC<ToastProps> = ({ id, title, message, autoDismiss = 9000, t
   return (
     <PageShell>
       <div
-        className={`fixed w-screen h-screen flex flex-col gap-4 justify-end items-end z-[51] pointer-events-none bottom-0 right-0 p-4`}
+        className={`fixed bottom-4 right-4 z-[100] pointer-events-none flex flex-col gap-4 max-w-sm w-full`}
       >
         {toasts.map(toast => {
           return (
