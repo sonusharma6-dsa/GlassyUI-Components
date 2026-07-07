@@ -107,6 +107,14 @@ const GlassyUIComponentsPage: React.FC = () => {
         navigate('/file-upload-details', { state: { fromPage: currentPage } }),
     },
     {
+      title: 'Divider',
+      description:
+        'A glassmorphic separator component to visually divide content sections.',
+      icon: <AlignLeft size={22} />,
+      onClick: () =>
+        navigate('/divider-details', { state: { fromPage: currentPage } }),
+    },
+    {
       title: 'Modals',
       description: 'Eye-catching dialog boxes with glassmorphism effects.',
       icon: <MessageSquare size={22} />,
